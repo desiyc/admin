@@ -30,7 +30,8 @@ export default {
       //有接口，则自动登录
       // const admin = JSON.parse('' + localStorage.getItem('admin') + '')
       // console.log('admin: ', admin)
-      // const token: any = localStorage.getItem('token')
+      //每次刷新页面，绑定token
+      // const token: any = localStorage.getItem(KEY_TOKEN)
       // bindJWTToken(token)
       // reducer(RSetState, { currentUser: admin, status: UserState.autherized })
       // if (admin) {
