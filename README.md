@@ -9,6 +9,9 @@ src 目录结构:
 | |-- config //上传地址、接口请求前缀、token 名称定义
 | |-- enum //常量定义
 | |-- interface //登录状态定义
+|-- Common //公共组件目录
+| |-- MenuFooter //页面底部
+| |-- RichTextInput // 富文本组件
 |-- models //models 目录
 | |-- index //引用全部 models
 | |-- User //基于 dva17 规范的 model，包含 namespace,state,reducer,effect

@@ -3,7 +3,9 @@ import { EDelete, EGet, EPost, EPut, NDemo, RSetState } from '../common/action'
 
 export default {
   namespace: NDemo,
-  state: {},
+  state: {
+    list: null,
+  },
   reducers: {
     [RSetState](state: any, payload: any) {
       return { ...state, ...payload }
@@ -11,8 +13,9 @@ export default {
   },
   effects: {
     //  标准CURD示例
-    async [EGet]({ payload }: any) {
-      await requestGet('demo', payload)
+    async [EGet]({ payload }: any, reducer: any) {
+      let res = await requestGet('demo', payload)
+      reducer(RSetState, { list: res })
     },
     async [EPost]({ payload }: any) {
       await requestPost('demo', payload)

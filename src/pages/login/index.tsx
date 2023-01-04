@@ -3,7 +3,7 @@ import { Alert } from 'antd'
 import { LoginForm, ProFormText } from '@ant-design/pro-form'
 import { LockOutlined, UserOutlined } from '@ant-design/icons'
 
-import { EGet, EUserLogin, NUser } from '../../common/action'
+import { EUserLogin, NUser } from '../../common/action'
 
 export default () => {
   const { loading } = useLoading(NUser) //读取model的effect加载状态

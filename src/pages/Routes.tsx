@@ -9,7 +9,7 @@ export default {
     routes: [
       {
         path: '/Welcome',
-        name: '客服后台',
+        name: 'Hello',
         icon: <CreditCardOutlined />,
         component: <Welcome />,
       },

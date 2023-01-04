@@ -2,8 +2,7 @@ import { Button, message, Result, Space } from 'antd'
 
 import { PlusOutlined, SmileOutlined } from '@ant-design/icons'
 import { useEffect } from 'react'
-
-
+import RichTextInput from '../../components/RichTextInput'
 
 export default () => {
   useEffect(() => {
@@ -18,13 +17,10 @@ export default () => {
     <div
       style={{
         height: '100vh',
-      }}
-    >
-      <Result
-        icon={<SmileOutlined />}
-        title="Great, we successed!"
-        extra={<Button type="primary">Next</Button>}
-      />
+      }}>
+      <Result icon={<SmileOutlined />} title="Great, we successed!" extra={<Button type="primary">Next</Button>} />
+      <div>富文本组件</div>
+      <RichTextInput />
     </div>
   )
 }
