@@ -1,6 +1,6 @@
 === 前端 react 框架 ===
 
----技术栈：react + dva17 + antd v5 + pro v4 + ts ---
+---技术栈：react + dva17 + antd v4 + pro v4 + ts ---
 src 目录结构:
 |-- assets //静态资源
 | |-- images //图片资源，使用 index 引用
